@@ -251,7 +251,7 @@ body {
   .cardp:nth-child(4) { animation-delay: 1.4s; }
   
   .cardp:hover {
-    transform: scale(1.55);
+    transform: scale(1.1);
   }
   
   .card-contentp {
@@ -328,7 +328,7 @@ body {
   .cardp:nth-child(4) { animation-delay: 0.8s; }
   
   .cardp:hover {
-    transform: scale(1.55);
+    transform: scale(1.1);
     box-shadow: 0 0 20px 5px #00ff00; /* Add glowing green effect */
     border-color: #00ff00; /* Set border color to green */
   }
@@ -379,7 +379,7 @@ body {
   }
   
   .cardp:hover {
-    transform: scale(1.55); /* Slight enlargement on hover */
+    transform: scale(1.1); /* Slight enlargement on hover */
     transition: transform 0.3s ease;
   }
   
