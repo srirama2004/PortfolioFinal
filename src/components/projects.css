@@ -255,7 +255,7 @@ body {
   
   .card-contentp {
     display: flex;
-    padding: 10px;
+    padding: 50px;
     gap: 10px;
     align-items: center;
   }
@@ -282,7 +282,9 @@ body {
     text-decoration: none;
     background-color: #00ff00;
     color: black;
-    padding: 10px 15px;
+    width: 50px;
+    height: 30px;
+    padding: 1px 1px;
     border-radius: 5px;
     font-weight: bold;
   }
@@ -368,7 +370,7 @@ body {
   }
   
   .card-contentp {
-    padding: 20px;
+    padding: 40px;
     color: #fff;
     text-align: center;
   }

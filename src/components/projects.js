@@ -60,7 +60,7 @@ const Projects = () => {
                 rel="noopener noreferrer"
                 className="btn btn-primary"
               >
-                View Project
+                View
               </a>
             )}
           </div>
