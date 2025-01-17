@@ -24,6 +24,14 @@ const Welcome = () => {
             }}
           />
         </h1>
+        <div className="hover-container">
+        <div className="img-container">
+          <img src={MyImg} alt="Floating" className="floating-image" />
+        </div>
+        <Link to="/expe">
+          <button className="action1-button">Know More</button>
+        </Link>
+      </div>
         <p className="welcome-description">
           A Computer Science B-tech student with keen interest in coding and other technologies.
           Eager for positions where I can apply my skills and learn more. I always strive for
@@ -47,14 +55,7 @@ const Welcome = () => {
           <button className="action-button">View Projects</button>
         </Link>
       </div>
-      <div className="hover-container">
-        <div className="img-container">
-          <img src={MyImg} alt="Floating" className="floating-image" />
-        </div>
-        <Link to="/expe">
-          <button className="action1-button">Know More</button>
-        </Link>
-      </div>
+      
     </div>
   );
 };
