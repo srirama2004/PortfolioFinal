@@ -21,14 +21,14 @@ const Projects = () => {
     },
     {
         title: 'Secure Text Drive',
-        description: 'Currently working on a project that predicts ICU admission of pediatric respiratory illness patients using machine learning algorithms.',
-        technologies: 'Machine Learning, Python, TensorFlow',
+        description: 'A Secure Text Storage System, where users can store and retreive text files safely. Rsa encryption, Hashing and digital signatures are used to ensure safety.',
+        technologies: 'Flask, PostgreSQL, RSA encryption',
         link: 'https://github.com/srirama2004/SriHomeRepo/tree/main/Projects_sri/Ml_projects/ICUadmissionPredictor', // Placeholder if not live yet
         image: icuAdmissionImage, // Use the imported image
       },
       {
         title: 'Beta Medical Service ',
-        description: 'Currently working on a project that predicts ICU admission of pediatric respiratory illness patients using machine learning algorithms.',
+        description: 'Web app integrated with ML models to predict blood donations. Features include patient appointments, test results, and blood donation predictions.',
         technologies: 'Machine Learning, Python, TensorFlow',
         link: 'https://github.com/srirama2004/SriHomeRepo/tree/main/Projects_sri/Ml_projects/ICUadmissionPredictor', // Placeholder if not live yet
         image: icuAdmissionImage, // Use the imported image

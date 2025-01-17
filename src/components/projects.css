@@ -104,12 +104,6 @@ body {
   }
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .card {
-    width: 80%;
-  }
-}
 .card {
   width: 45%;
   height: 400px;
@@ -196,5 +190,69 @@ body {
   100% {
     background-position: 0% 50%;
   }
+}
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .parent-container {
+      margin-top: 63%;
+  }
+    .card-container {
+      position: relative;
+      width: 60%; /* Maintain card size */
+      height: 460px; /* Maintain card size */
+      margin: 10px;
+      display: inline-block;
+      overflow: hidden;
+      border-radius: 15px;
+      margin-top: 10%;
+    }
+
+    .experience-section h3, .courses-section h3, .skills-container h3 {
+        font-size: 2rem;
+    }
+
+    .experience-section p, .courses-section p, .skills-container p {
+        font-size: 1rem;
+    }
+
+    a.certificate-link {
+        font-size: 0.9rem;
+        padding: 4px 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .experience-container, .experience-section, .courses-section, .skills-container {
+        padding: 20px 10px;
+        margin: 10px;
+        width: 100%;
+    }
+
+    .experience-section h3, .courses-section h3, .skills-container h3 {
+        font-size: 1.8rem;
+    }
+
+    .experience-section p, .courses-section p, .skills-container p {
+        font-size: 0.9rem;
+    }
+
+    a.certificate-link {
+        font-size: 0.8rem;
+        padding: 3px 6px;
+    }
+
+    .skills-items {
+        grid-template-columns: 1fr !important;
+    }
+    .card-container {
+      position: relative;
+      width: 60%; /* Maintain card size */
+      height: 460px; /* Maintain card size */
+      margin: 10px;
+      display: inline-block;
+      overflow: hidden;
+      border-radius: 15px;
+      margin-top: 5%;
+    }
 }
 

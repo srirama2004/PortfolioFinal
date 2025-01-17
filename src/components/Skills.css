@@ -95,6 +95,9 @@
 
 /* Media Queries for Mobile */
 @media (max-width: 768px) {
+  .skills-container{
+    margin-top: 170%;
+  }
   .skills-list {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust to 2 columns */
   }

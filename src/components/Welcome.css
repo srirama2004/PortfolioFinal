@@ -217,3 +217,38 @@ body {
     transition: background-color 0.3s ease-in-out;
   }
 
+ /* Responsive Styling */
+@media (max-width: 768px) {
+  /* img-container styles */
+  .img-container {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    height: 320px;
+    background: linear-gradient(90deg, #000000, #000000,#000000,#000000);
+    background-size: 400% 400%; /* Ensure that the gradient moves smoothly */
+    animation: borderGlow 5s linear infinite; /* Animated gradient */
+    border-radius: 30px;
+    transition: all 0.5s ease-in-out; /* Smooth transition */
+    overflow: hidden; /* Ensure the image doesn't overflow */
+    margin-top: 100px;
+  }
+  .welcome-container {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 490px) {
+  .img-container {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 220px;
+    background: linear-gradient(90deg, #000000, #000000,#000000,#000000);
+    background-size: 400% 400%; /* Ensure that the gradient moves smoothly */
+    animation: borderGlow 5s linear infinite; /* Animated gradient */
+    border-radius: 30px;
+    transition: all 0.5s ease-in-out; /* Smooth transition */
+    overflow: hidden; /* Ensure the image doesn't overflow */
+  }
+}
