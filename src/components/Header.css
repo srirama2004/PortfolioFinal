@@ -56,7 +56,7 @@
       top: 0;                   /* Positions it at the top */
       right: 0;                 /* Aligns it to the right */
       z-index: 1000;           /* Ensure the navbar is above other content */
-      margin-right: 7%;
+      margin-right: 5%;
     }
     
     .nav-links {
