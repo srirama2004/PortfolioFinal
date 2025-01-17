@@ -8,7 +8,7 @@
     max-width: 60%;
     float: left; /* Aligns the container to the left */
     margin-left: 4%;
-    margin-top: 5%
+    margin-top: 15%
 }
 body {
     font-family: 'Merriweather', serif; /* Apply Times New Roman globally */
@@ -231,24 +231,40 @@ body {
     border-radius: 30px;
     transition: all 0.5s ease-in-out; /* Smooth transition */
     overflow: hidden; /* Ensure the image doesn't overflow */
-    margin-top: 100px;
+    margin-top: 1px;
   }
   .welcome-container {
-    margin-top: 50px;
+    margin-top: 70%;
   }
 }
 
-@media (max-width: 490px) {
+@media (max-width: 550px) {
   .img-container {
     position: relative;
     display: inline-block;
-    width: 200px;
-    height: 220px;
+    width: 240px;
+    height: 260px;
     background: linear-gradient(90deg, #000000, #000000,#000000,#000000);
     background-size: 400% 400%; /* Ensure that the gradient moves smoothly */
     animation: borderGlow 5s linear infinite; /* Animated gradient */
     border-radius: 30px;
     transition: all 0.5s ease-in-out; /* Smooth transition */
     overflow: hidden; /* Ensure the image doesn't overflow */
+    margin-top: 1px;
   }
+  .welcome-container{
+ margin-top: 20%;
+  }
+  .welcome-text {
+    margin-top: 80%;
+    font-size: 1.5em;
+    font-weight: 900;
+    color: #00ff00;
+}
+
+.welcome-description {
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: 500;
+}
 }
