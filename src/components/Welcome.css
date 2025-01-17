@@ -251,9 +251,11 @@ body {
     transition: all 0.5s ease-in-out; /* Smooth transition */
     overflow: hidden; /* Ensure the image doesn't overflow */
     margin-top: 1px;
+    margin-left: 40%;
   }
   .welcome-container{
- margin-top: 30%;
+ margin-top: 27%;
+ margin-left: 20%;
   }
   .welcome-text {
     margin-top: 40%;
