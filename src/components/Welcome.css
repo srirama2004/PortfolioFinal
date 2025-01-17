@@ -253,7 +253,7 @@ body {
     margin-top: 1px;
   }
   .welcome-container{
- margin-top: 70%;
+ margin-top: 60%;
   }
   .welcome-text {
     margin-top: 80%;
@@ -296,9 +296,9 @@ body {
   background-color: #00cc00;
 }
 .social-icon {
-  width: 20px; /* Adjust size as needed */
-  height: 20px; /* Adjust size as needed */
-  margin: 0 10px; /* Space between icons */
+  width: 10px; /* Adjust size as needed */
+  height: 10px; /* Adjust size as needed */
+  margin: 0 5px; /* Space between icons */
   transition: transform 0.3s; /* Smooth scaling effect */
 }
 
