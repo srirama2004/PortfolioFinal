@@ -329,7 +329,7 @@ a.certificate-link {
         padding: 5px 10px; /* Add padding to make it more clickable */
         border-radius: 5px; /* Rounded corners for the link */
         margin-left: 10px; /* Space between the certificate link and text */
-        font-size: 1rem; /* Font size of the certificate link */
+        font-size: 0.5rem; /* Font size of the certificate link */
         transition: background-color 0.3s ease; /* Smooth transition for hover effect */
       }
       
