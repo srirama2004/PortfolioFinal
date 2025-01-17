@@ -100,3 +100,76 @@
     font-style: italic;
     color: #00ffcc;
 }
+@media (max-width: 550px) {
+    .experience-education {
+        padding: 50px;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        max-width: 1000px;
+        margin: auto;
+        margin-top: 20%;
+        width: 50vw;
+    }
+    
+    /* Section Title */
+    .section-title {
+        text-align: center;
+        font-size: 2.4rem;
+        margin-bottom: 40px;
+        color: #00ffcc;
+    }
+    
+    /* ===== Education Section (Zig-Zag Timeline) ===== */
+    .education-section {
+        margin-top: 80px;
+        padding: 30px;
+        background: #1b1b1b;
+        border-radius: 20px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.8);
+    }
+    
+    .timeline {
+        position: relative;
+        max-width: 900px;
+        margin: auto;
+    }
+    
+    .timeline-line {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 2px;
+        height: 100%;
+        background: #00ffcc;
+        z-index: 0;
+    }
+    
+    .timeline-item {
+        width: 40%;
+        padding: 20px;
+        background: #222;
+        border-radius: 15px;
+        position: relative;
+        box-shadow: 0 0 10px rgba(0,255,204,0.5);
+        transition: transform 0.3s ease;
+    }
+    
+    .timeline-item:hover {
+        box-shadow: 0 0 20px #00ffcc;
+        transform: translateY(-5px);
+    }
+    
+    .timeline-item.left {
+        left: 0;
+        text-align: right;
+    }
+    
+    .timeline-item.right {
+        left: 55%;
+    }
+    
+    .timeline-date {
+        font-style: italic;
+        color: #00ffcc;
+    }
+}
