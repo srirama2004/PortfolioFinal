@@ -253,18 +253,56 @@ body {
     margin-top: 1px;
   }
   .welcome-container{
- margin-top: 20%;
+ margin-top: 70%;
   }
   .welcome-text {
     margin-top: 80%;
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: 900;
     color: #00ff00;
 }
 
 .welcome-description {
     color: #ffffff;
-    font-size: 1em;
+    font-size: 0.7em;
     font-weight: 500;
+}
+.action1-button {
+  background-color: #00ff00;
+  border: none;
+  color: black;
+  padding: 7px 10px;
+  font-size: 0.7em;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 7px;
+  transition: background-color 0.3s ease-in-out;
+}
+.action1-button:hover {
+  background-color: #00cc00;
+}
+.action-button {
+  background-color: #00ff00;
+  border: none;
+  color: black;
+  padding: 7px 10px;
+  font-size: 0.7em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.action-button:hover {
+  background-color: #00cc00;
+}
+.social-icon {
+  width: 20px; /* Adjust size as needed */
+  height: 20px; /* Adjust size as needed */
+  margin: 0 10px; /* Space between icons */
+  transition: transform 0.3s; /* Smooth scaling effect */
+}
+
+.social-icon:hover {
+  transform: scale(1.1); /* Scale icon on hover */
 }
 }
