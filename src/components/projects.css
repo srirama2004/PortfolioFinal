@@ -222,37 +222,5 @@ body {
 }
 
 @media (max-width: 480px) {
-    .experience-container, .experience-section, .courses-section, .skills-container {
-        padding: 20px 10px;
-        margin: 10px;
-        width: 100%;
-    }
-
-    .experience-section h3, .courses-section h3, .skills-container h3 {
-        font-size: 1.8rem;
-    }
-
-    .experience-section p, .courses-section p, .skills-container p {
-        font-size: 0.9rem;
-    }
-
-    a.certificate-link {
-        font-size: 0.8rem;
-        padding: 3px 6px;
-    }
-
-    .skills-items {
-        grid-template-columns: 1fr !important;
-    }
-    .card-container {
-      position: relative;
-      width: 60%; /* Maintain card size */
-      height: 460px; /* Maintain card size */
-      margin: 10px;
-      display: inline-block;
-      overflow: hidden;
-      border-radius: 15px;
-      margin-top: 5%;
-    }
 }
 
