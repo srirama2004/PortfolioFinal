@@ -1,6 +1,6 @@
 import React from 'react';
 import './expe.css';
-
+import { Link } from 'react-router-dom';
 const Experience = () => {
   return (
     <div className="experience-container">
@@ -25,6 +25,9 @@ const Experience = () => {
             <li>Technologies: Flask, PostgreSQL, TensorFlow, ScikitLearn</li>
           </ul>
         </p>
+        <Link to="/exedu">
+                  <button className="action1-button">Education</button>
+                </Link>
       </div>
       <div className="courses-section">
         <h3>Courses</h3>
