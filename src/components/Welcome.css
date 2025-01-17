@@ -305,4 +305,7 @@ body {
 .social-icon:hover {
   transform: scale(1.1); /* Scale icon on hover */
 }
+.parent-container {
+  margin-top: 80%;
+}
 }

@@ -208,8 +208,8 @@ body {
   .projects-title {
     text-align: center;
     color: #00ff00;
-    margin-bottom: 20px;
-    font-size: 2rem;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
   }
   
   .carousel-containerp {
@@ -217,7 +217,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
     margin-top: 150%;
   }
   
@@ -250,13 +250,13 @@ body {
   .cardp:nth-child(4) { animation-delay: 1.4s; }
   
   .cardp:hover {
-    transform: scale(1.05);
+    transform: scale(1.55);
   }
   
   .card-contentp {
     display: flex;
-    padding: 20px;
-    gap: 15px;
+    padding: 10px;
+    gap: 10px;
     align-items: center;
   }
   
@@ -275,7 +275,7 @@ body {
   }
   
   .card-descriptionp p {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
   
   .card-descriptionp a {
@@ -374,7 +374,7 @@ body {
   }
   
   .cardp:hover {
-    transform: scale(0.55); /* Slight enlargement on hover */
+    transform: scale(1.55); /* Slight enlargement on hover */
     transition: transform 0.3s ease;
   }
   
