@@ -50,7 +50,7 @@ const Projects = () => {
             <img src={project.image} alt={project.title} />
           </div>
           <div className="card-descriptionp">
-            <h3>{project.title}</h3>
+            <h5>{project.title}</h5>
             <p>{project.description}</p>
             <p><strong>Technologies Used:</strong> {project.technologies}</p>
             {project.link && (

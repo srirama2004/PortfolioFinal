@@ -4,7 +4,7 @@ body {
   font-family: Arial, sans-serif;
   color: #00ff00;
   background-image: url('background3.webp'); 
-  /* background: linear-gradient(black, rgb(29, 29, 29)); */
+ /*background: black;*/ 
   background-size: cover;
   background-position: center;
 }

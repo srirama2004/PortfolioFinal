@@ -17,7 +17,7 @@
     border-radius: 20px;
     padding: 40px;
     margin: 20px;
-    margin-top: 40%;
+    margin-top: 150%;
     width: 90%;
     max-width: 900px;  /* Consistent max width */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow for more depth */
@@ -191,7 +191,7 @@ a.certificate-link {
         border-radius: 20px;
         padding: 40px;
         margin: 20px;
-        margin-top: 180%;
+        margin-top: 300%;
         width: 85%;
         max-width: 800px;  /* Consistent max width */
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow for more depth */
