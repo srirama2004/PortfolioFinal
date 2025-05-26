@@ -62,13 +62,15 @@
     margin-top: 30%;
   }
 }
+
+
 @media (max-width: 768px) {
   .mb-4{
     margin-top: 30%;
   }
 .project-card {
-  width: 370px;
-  height: 600px;
+  width: 350px;
+  height: 590px;
   border-radius: 16px;
   overflow: visible;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
