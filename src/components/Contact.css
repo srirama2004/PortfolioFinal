@@ -94,6 +94,7 @@
 @media (max-width: 480px) {
   .contact-container {
     padding: 30px 15px;
+    margin-left: 30%;
   }
 
   .contact-title {
