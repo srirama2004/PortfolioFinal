@@ -84,7 +84,7 @@ const settings = {
 function Projects() {
   return (
     <Container fluid className="text-center mt-5">
-      <h2 className="mb-4">Featured Projects</h2>
+      <h2 className="mb-4">Projects</h2>
       <Slider {...settings}>
         {projects.map((proj) => (
           <div key={proj.id} className="px-2">
