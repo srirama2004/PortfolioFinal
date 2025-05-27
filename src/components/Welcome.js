@@ -50,7 +50,7 @@ const Welcome = () => {
         </div>
         <div className='buttonp'>
         <Link to="/projects">
-          <button className="action-button">View Projects</button>
+          <button className="action-button">Projects</button>
         </Link>
          <Link to="/expe">
           <button className="action1-button">Experience</button>
