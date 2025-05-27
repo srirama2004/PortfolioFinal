@@ -1,49 +1,5 @@
-// // src/components/Header.js
-// import React from 'react';
-// import { Link } from 'react-router-dom'; // Import Link
-// import './Header.css';
 
-// const Header = () => {
-//   return (
-//     <nav className="navbar">
-//       <ul className="nav-links">
-//         <li className="nav-item home">HOME</li>
-//         <Link to="/"></Link>
-//         <li className="nav-item skills">Skills</li>
-//         <Link to="/skills"></Link>
-//         <li className="nav-item contact">
-//         <Link to="/contact">Contact</Link></li>
-//       </ul>
-//     </nav>
-//   );
-// };
-
-//  export default Header;
-// // src/components/Header.js
-// import React from 'react';
-// import { Link } from 'react-router-dom'; // Import Link
-// import './Header.css';
-
-// const Header = () => {
-//   return (
-//     <nav className="navbar">
-//       <ul className="nav-links">
-//         <li className="nav-item home">
-//           <Link to="/">HOME</Link>
-//         </li>
-//         <li className="nav-item skills">
-//           <Link to="/skills">Skills</Link>
-//         </li>
-//         <li className="nav-item contact">
-//           <Link to="/contact">Contact</Link>
-//         </li>
-//       </ul>
-//     </nav>
-//   );
-// };
-
-// src/components/Header.js
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom'; // Import Link and useNavigate
 import './Header.css';
 
@@ -59,9 +15,20 @@ const Header = () => {
   const handleHomeClick = () => {
     navigate('/'); // Programmatically navigate to the Skills page
   };
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50); // Adjust the threshold if needed
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
-    <nav className="navbar">
+     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <ul className="nav-links">
         <li className="nav-item home">
         <span onClick={handleHomeClick} style={{ cursor: 'pointer', color: '#ffffff' }}>

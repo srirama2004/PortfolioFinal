@@ -28,9 +28,6 @@ const Welcome = () => {
         <div className="img-container">
           <img src={MyImg} alt="Floating" className="floating-image" />
         </div>
-        <Link to="/expe">
-          <button className="action1-button">Experience</button>
-        </Link>
       </div>
         <p className="welcome-description">
           A Computer Science B-tech student with keen interest in coding and other technologies.
@@ -51,9 +48,14 @@ const Welcome = () => {
             <img src={GithubImage} alt="Github" className="social-icon" />
           </a>
         </div>
+        <div className='buttonp'>
         <Link to="/projects">
           <button className="action-button">View Projects</button>
         </Link>
+         <Link to="/expe">
+          <button className="action1-button">Experience</button>
+        </Link>
+        </div>
       </div>
       
     </div>

@@ -42,13 +42,20 @@
   
   /* Hover effect */
   .nav-item:hover {
-    background-color: #00ff00;
+    background-color: #08e308e2;
     color: #000;
     text-decoration-color: #000;
   }
+  /* Add this at the bottom of your Header.css */
+.navbar.scrolled {
+  background-color: #000; /* Solid black */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Optional shadow for depth */
+  transition: background-color 0.3s ease;
+}
+
   @media (max-width: 550px) {
     .navbar {
-      width: 70%;
+      width: 100%;
       padding: 10px;
       display: flex;
       justify-content: flex-end; /* Aligns items to the right */
@@ -95,5 +102,9 @@
       color: #000;
       text-decoration-color: #000;
     }
-
+.navbar.scrolled {
+  background-color: #000; /* Solid black */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Optional shadow for depth */
+  transition: background-color 0.3s ease;
+}
   }
