@@ -1,30 +1,20 @@
 import React from 'react';
-import linkedInImage from './pic/linkedin.jpg';
-import './Contact.css';
+import linkedInImage from './pic/linkedin.jpg'; // Adjust the path as needed
+import './Contact.css'; // Ensure this file exists in the same directory
 
 const Contact = () => {
   return (
     <div className="contact-container">
-      <h1 className="contact-title">Let's Connect</h1>
-      <p className="contact-description">I'm always open to collaboration, feedback, or a simple hello 😊</p>
-
-      <div className="contact-buttons">
-        <a
-          href="https://www.linkedin.com/in/srirama-v-b5bb32293/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="contact-button"
-        >
-          <img src={linkedInImage} alt="LinkedIn" className="linkedin-icon" />
-          Message on LinkedIn
-        </a>
-
-        <a
-          href="mailto:sriramavate2@gmail.com"
-          className="contact-button email"
-        >
-          📧 Send an Email
-        </a>
+      <h1 className="contact-title">Let's Connect!</h1>
+      <p className="contact-description">I'm always open to collaboration, feedback, or a simple hello 😊.</p>
+      
+      <a href="https://www.linkedin.com/in/srirama-v-b5bb32293/" target="_blank" rel="noopener noreferrer">
+        <img src={linkedInImage} alt="LinkedIn" className="social-icon" />
+      </a>
+      
+      <div className="contact-email-container">
+        <p className="contact-email-description">Or mail to:</p>
+        <a href="mailto:sriramavate2@gmail.com" className="contact-email-link">sriramavate2@gmail.com</a>
       </div>
     </div>
   );
