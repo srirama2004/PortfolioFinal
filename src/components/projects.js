@@ -12,7 +12,7 @@ const projects = [
     description: "Readly is a modern online library app built using the MERN stack (MongoDB, Express.js, React.js, Node.js). It features a splash screen, category-based book browsing, smart search, daily check-ins to track reading streaks, user authentication, and a responsive book carousel. The app has a clean, mobile-friendly UI and uses ImgBB to host book images.",
     image: "https://i.ibb.co/Xfy5Wkxn/lib.jpg",
     github: "https://github.com/srirama2004/Online_Library",
-    website: ""
+    website: "https://vimeo.com/1087918786?share=copy#t=0"
   },
   {
     id: 2,
