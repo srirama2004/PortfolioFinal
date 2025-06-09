@@ -22,6 +22,7 @@ body {
 
 .welcome-description {
     color: #ffffff;
+     text-align: justify;   
     font-size: 1.1em;
     font-weight: 500;
     margin-left: 25%;
