@@ -92,7 +92,7 @@ function Projects() {
   <Card.Img variant="top" src={proj.image} className="project-img" />
   <Card.Body>
     <Card.Title className="fs-5">{proj.title}</Card.Title>
-    <Card.Text className="text-muted small">{proj.description}</Card.Text>
+    <Card.Text className="text-muted small" style={{ textAlign: "justify" }}>{proj.description}</Card.Text>
     <div className="d-flex justify-content-around mt-3">
       <Button variant="outline-dark" size="sm" href={proj.github} target="_blank">
         GitHub
