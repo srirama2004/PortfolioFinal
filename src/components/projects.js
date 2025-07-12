@@ -53,6 +53,14 @@ const projects = [
     image: "https://i.ibb.co/pvG3628S/text.png",
     github: "https://github.com/srirama2004/SecureTextDrive",
     website: "https://securedrive.hmmbo.com/"
+  },
+   {
+    id: 7,
+    title: "Interly",
+    description: "Interly is a React.js web app that simulates technical interviews. Users enter topics, choose difficulty, and get random questions from a Node.js backend. Questions are spoken using the Web Speech API. Answers are recorded with react-webcam and the MediaRecorder API, with optional saving or backend upload. Features include voice toggle, auto-numbered questions, and a countdown timer. Built with React Hooks and integrated Web APIs for a realistic, interactive interview experience.",
+    image: "https://ibb.co/tpSLbZCS",
+    github: "https://github.com/srirama2004/Interly",
+    website: "https://interly.vercel.app/"
   }
 ];
 
