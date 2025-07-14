@@ -44,7 +44,7 @@ const Welcome = () => {
           <a href="https://www.linkedin.com/in/srirama-v-b5bb32293/" target="_blank" rel="noopener noreferrer">
             <img src={linkedInImage} alt="LinkedIn" className="social-icon" />
           </a>
-          <a href="https://github.com/srirama2004/SriHomeRepo/tree/main" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/srirama2004" target="_blank" rel="noopener noreferrer">
             <img src={GithubImage} alt="Github" className="social-icon" />
           </a>
         </div>
