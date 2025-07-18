@@ -352,7 +352,7 @@ body {
   border: 2px solid #00ff00;
   margin-top: 7px;
   transition: background-color 0.3s ease-in-out;
-  margin: 3%;
+  margin: 1%;
   flex-direction: column;
   margin-left: -2%;
    font-weight: 700;
@@ -370,7 +370,7 @@ body {
   border: 2px solid #00ff00;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
-  margin: 3%;
+  margin: 1%;
 }
 
 .action-button:hover {
@@ -378,7 +378,7 @@ body {
 }
 .buttonp {
   display: flex;
-  gap: 20px; /* space between buttons */
+  gap: 10px; /* space between buttons */
   justify-content: center; /* optional: center the buttons */
   margin-top: 10px;
   flex-direction: row;
