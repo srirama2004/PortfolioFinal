@@ -79,7 +79,7 @@ const Skills = () => {
 
   return (
     <div className="skills-gamified-container">
-      <h1 className="skills-gamified-title">⚡ Skills</h1>
+      <h1 className="skills-gamified-title">Skills</h1>
 
       <div className="category-buttons">
         {categories.map(({ key, label, icon }) => (

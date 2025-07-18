@@ -28,7 +28,7 @@ const CertificateFlipBook = () => {
 
   return (
     <div className="flipbook-section">
-      <h2 className="flipbook-title">📜 Certificates</h2>
+      <h2 className="flipbook-title">Certificates</h2>
       <div className="flipbook-container">
         {certificates.map((cert, index) => (
           <div

@@ -90,6 +90,7 @@
 @media (max-width: 768px) {
   .skills-gamified-title {
     font-size: 2rem;
+    margin-top: 12%;
   }
 
   .category-btn {
