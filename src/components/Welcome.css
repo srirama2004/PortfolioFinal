@@ -354,7 +354,7 @@ body {
   transition: background-color 0.3s ease-in-out;
   margin: 3%;
   flex-direction: column;
-  margin-left: -7%;
+  margin-left: -2%;
    font-weight: 700;
 }
 .action1-button:hover {
