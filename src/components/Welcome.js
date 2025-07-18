@@ -55,6 +55,9 @@ const Welcome = () => {
          <Link to="/expe">
           <button className="action1-button">Experience</button>
         </Link>
+         <Link to="/certi">
+          <button className="action1-button">Certifications</button>
+        </Link>
         </div>
       </div>
       

@@ -9,7 +9,9 @@ import Contact from './components/Contact'; // Assuming you have a Contact compo
 import Project from './components/projects'; // Assuming you have a Contact component
 import ExEdu from './components/exedu'; // Assuming you have a Contact component
 import Expe from './components/expe'; // Assuming you have a Contact component
+import CertificateFlipBook from './components/CertificateFlipBook';
 import './App.css';
+
 
 const App = () => {
   return (
@@ -23,6 +25,7 @@ const App = () => {
         <Route path="/projects" element={<Project />} />
         <Route path="/exedu" element={<ExEdu />} />
         <Route path="/expe" element={<Expe />} />
+         <Route path="/certi"element={<CertificateFlipBook/>}/>
         </Routes>
         </Router>
 

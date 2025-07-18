@@ -105,9 +105,6 @@ const Skills = () => {
           </div>
         ))}
       </div>
-            <section id="certificates">
-  <CertificateFlipBook />
-</section>
     </div>
     
   );
