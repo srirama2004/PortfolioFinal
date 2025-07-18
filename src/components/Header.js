@@ -37,7 +37,7 @@ const Header = () => {
         </li>
         <li className="nav-item skills">
           <span onClick={handleSkillsClick} style={{ cursor: 'pointer', color: '#ffffff' }}>
-            Skills
+            Certifications
           </span>
         </li>
         <li className="nav-item">
