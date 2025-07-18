@@ -371,7 +371,7 @@ body {
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
   margin: 1%;
-  margin-left: 1%;
+  margin-left: 3%;
 }
 
 .action-button:hover {
@@ -383,6 +383,7 @@ body {
   justify-content: center; /* optional: center the buttons */
   margin-top: 10px;
   flex-direction: row;
+   margin-left: 3%;
 }
 .social-icon {
   width: 10px; /* Adjust size as needed */
