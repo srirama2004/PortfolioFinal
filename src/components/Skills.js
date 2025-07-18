@@ -57,9 +57,9 @@ const categories = [
 ];
 
 const skills = {
-  cs: ['DSA', 'OOP', 'Computer Networks', 'Embedded Systems'],
-  lang: ['Java', 'Python', 'C++', 'JavaScript'],
-  web: ['HTML', 'CSS', 'React', 'Node.js'],
+  cs: ['DSA', 'OOP','DBMS','Operating System','Machine Learning','Computer Networks', 'Embedded Systems'],
+  lang: ['Java', 'Python', 'C++', 'JavaScript','SQL'],
+  web: ['HTML', 'CSS','MongoDB','PostgreySql', 'React', 'Node.js'],
   design: ['Figma', 'Canva'],
 };
 
