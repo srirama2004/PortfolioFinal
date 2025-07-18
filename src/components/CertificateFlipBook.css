@@ -99,9 +99,9 @@
   color: #81d4fa;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 550px) {
   .flipbook-section{
-    margin-top: 20%;
+    margin-top: 50%;
   }
   .flip-card {
     width: 100%;
