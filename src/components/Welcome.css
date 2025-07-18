@@ -383,7 +383,7 @@ body {
   justify-content: center; /* optional: center the buttons */
   margin-top: 10px;
   flex-direction: row;
-   margin-left: 3%;
+   margin-left: 5%;
 }
 .social-icon {
   width: 10px; /* Adjust size as needed */
