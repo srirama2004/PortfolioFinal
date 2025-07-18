@@ -57,14 +57,14 @@
   @media (max-width: 550px) {
     .navbar {
       width: 100%;
-      padding: 10px;
+      padding: 8px;
       display: flex;
       justify-content: flex-end; /* Aligns items to the right */
       position: fixed;           /* Fixes the navbar at the top */
       top: 0;                   /* Positions it at the top */
       right: 0;                 /* Aligns it to the right */
       z-index: 1000;           /* Ensure the navbar is above other content */
-      margin-right: 5%;
+      margin-right: 4%;
     }
     
     .nav-links {
