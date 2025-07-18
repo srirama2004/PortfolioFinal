@@ -1,134 +1,115 @@
-// src/components/Skills.js
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Skills.css';
-import javaImg from './pic/java.png';
-import CImg from './pic/C.png';
-import CppImg from './pic/Cpp.png';
-import pyImg from './pic/python.jpeg';
-import sqlImg from './pic/sql.png';
-import htmlImg from './pic/html.png';
-import cssImg from './pic/css.png';
-import jsImg from './pic/js.png';
-import dsaImg from './pic/dsa.png';
-import oopImg from './pic/oop.png';
-import cnImg from './pic/cn.png';
-import rdbImg from './pic/rdb.png';
-import mlImg from './pic/ml.png';
-import linuxImg from './pic/linux.png';
-import esImg from './pic/es.png';
-import canvaImg from './pic/canva.jpeg';
-import figmaImg from './pic/figma.png';
-const Skills = () => {
-  const [lineFill, setLineFill] = useState(0);
+import CertificateFlipBook from './CertificateFlipBook';
+const categories = [
+  {
+    key: 'All',
+    label: 'All Skills',
+    icon: (
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+        <path d="M12 2L15.09 8H21L16.18 12.26L18.27 18L12 14.27L5.73 18L7.82 12.26L3 8H8.91L12 2Z" />
+      </svg>
+    ),
+  },
+  {
+    key: 'cs',
+    label: 'Computer Science',
+    icon: (
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+        <path d="M4 6H20V18H4V6ZM2 4V20H22V4H2ZM10 8H14V10H10V8ZM10 12H14V14H10V12Z" />
+      </svg>
+    ),
+  },
+  {
+    key: 'lang',
+    label: 'Languages',
+    icon: (
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 
+                10-4.48 10-10S17.52 2 12 2zm0 18
+                c-4.41 0-8-3.59-8-8s3.59-8 
+                8-8 8 3.59 8 8-3.59 8-8 8z"/>
+      </svg>
+    ),
+  },
+  {
+    key: 'web',
+    label: 'Web Tech',
+    icon: (
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+        <path d="M12 4C7.03 4 2.73 7.11 1 11.5
+          C2.73 15.89 7.03 19 12 19s9.27-3.11 11-7.5
+          C21.27 7.11 16.97 4 12 4zM6.76 16.24L4.5 12
+          l2.26-4.24L12 13.5l-5.24 2.74zM17.24 16.24L12 13.5
+          l5.24-5.74L19.5 12l-2.26 4.24z" />
+      </svg>
+    ),
+  },
+  {
+    key: 'design',
+    label: 'Design Tools',
+    icon: (
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+        <path d="M6 2v6h2v4h2v4h4v-4h2v-4h2V2H6zM4 22h16v-2H4v2z" />
+      </svg>
+    ),
+  },
+];
 
-  // Function to handle scrolling
-  const handleScroll = () => {
-    const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    const scrollTop = document.documentElement.scrollTop;
-    const scrollProgress = (scrollTop / scrollHeight) * 100;
-    setLineFill(scrollProgress);
-  };
+const skills = {
+  cs: ['DSA', 'OOP', 'Computer Networks', 'Embedded Systems'],
+  lang: ['Java', 'Python', 'C++', 'JavaScript'],
+  web: ['HTML', 'CSS', 'React', 'Node.js'],
+  design: ['Figma', 'Canva'],
+};
+
+const getAllSkills = () => Object.values(skills).flat();
+
+const Skills = () => {
+  const [activeCategory, setActiveCategory] = useState('All');
+  const [visibleSkills, setVisibleSkills] = useState(getAllSkills());
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+    if (activeCategory === 'All') {
+      setVisibleSkills(getAllSkills());
+    } else {
+      setVisibleSkills(skills[activeCategory]);
+    }
+  }, [activeCategory]);
 
   return (
-    <div className="skills-container">
-      <h1 className="skills-title">Skills</h1>
-      <div className="scroll-line" style={{ width: `${lineFill}%` }}></div>
+    <div className="skills-gamified-container">
+      <h1 className="skills-gamified-title">⚡ Skills</h1>
 
-      <div className="skills-list">
-        <div className="skills-category">
-          <h2>Programming Languages:</h2>
-          <div className="skills-items">
-            <div className="skill-item">
-              <img src={CImg} alt="Java" />
-              <p>C </p>
-            </div>
-            <div className="skill-item">
-              <img src={CppImg} alt="C++" />
-              <p>C++</p>
-            </div>
-            <div className="skill-item">
-              <img src={javaImg} alt="Java" />
-              <p>Java</p>
-            </div>
-            <div className="skill-item">
-              <img src={pyImg} alt="Python" />
-              <p>Python</p>
-            </div>
-            <div className="skill-item">
-              <img src={sqlImg} alt="SQL" />
-              <p>SQL</p>
-            </div>
-            <div className="skill-item">
-              <img src={htmlImg} alt="HTML" />
-              <p>HTML </p>
-            </div>
-            <div className="skill-item">
-              <img src={cssImg} alt="CSS" />
-              <p>CSS </p>
-            </div>
-            <div className="skill-item">
-              <img src={jsImg} alt="JavaScript" />
-              <p>JavaScript</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="skills-category">
-          <h2>Core Concepts:</h2>
-          <div className="skills-items">
-            <div className="skill-item">
-              <img src={dsaImg} alt="Data Structures & Algorithms" />
-              <p>Data Structures & Algorithms</p>
-            </div>
-            <div className="skill-item">
-              <img src={rdbImg} alt="Relational Databases" />
-              <p>Relational Databases</p>
-            </div>
-            <div className="skill-item">
-              <img src={oopImg} alt="OOP" />
-              <p>OOP</p>
-            </div>
-            <div className="skill-item">
-              <img src={mlImg} alt="Machine Learning" />
-              <p>Machine Learning</p>
-            </div>
-            <div className="skill-item">
-              <img src={linuxImg} alt="Linux" />
-              <p>Linux</p>
-            </div>
-            <div className="skill-item">
-              <img src={cnImg} alt="Computer Networks" />
-              <p>Computer Networks</p>
-            </div>
-            <div className="skill-item">
-              <img src={esImg} alt="Embedded Systems" />
-              <p>Embedded Systems</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="skills-category">
-          <h2>Other Skills:</h2>
-          <div className="skills-items">
-            <div className="skill-item">
-              <img src={figmaImg} alt="Figma" />
-              <p>Figma</p>
-            </div>
-            <div className="skill-item">
-              <img src={canvaImg} alt="Canva" />
-              <p>Canva</p>
-            </div>
-          </div>
-        </div>
+      <div className="category-buttons">
+        {categories.map(({ key, label, icon }) => (
+          <button
+            key={key}
+            className={`category-btn ${activeCategory === key ? 'active' : ''}`}
+            onMouseEnter={() => setActiveCategory(key)}
+            title={label}
+          >
+            {icon}
+          </button>
+        ))}
       </div>
+
+      <div className="skills-display">
+        {visibleSkills.map((skill, idx) => (
+          <div
+            key={idx}
+            className="skill-card fade-in"
+            style={{ animationDelay: `${idx * 100}ms` }}
+          >
+            <span>{skill}</span>
+          </div>
+        ))}
+      </div>
+            <section id="certificates">
+  <CertificateFlipBook />
+</section>
     </div>
+    
   );
 };
 
