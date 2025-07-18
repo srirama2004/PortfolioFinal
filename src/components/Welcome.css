@@ -344,7 +344,7 @@ body {
 }
 .action1-button {
   color: rgb(255, 255, 255);
-  padding: 7px 10px;
+  padding: 7px 7px;
    background-color: #1a1a1a;
   font-size: 1em;
   border-radius: 5px;
@@ -352,9 +352,9 @@ body {
   border: 2px solid #00ff00;
   margin-top: 7px;
   transition: background-color 0.3s ease-in-out;
-  margin: 5%;
+  margin: 3%;
   flex-direction: column;
-  margin-left: -10%;
+  margin-left: -7%;
    font-weight: 700;
 }
 .action1-button:hover {
@@ -362,7 +362,7 @@ body {
 }
 .action-button {
   color: rgb(255, 255, 255);
-  padding: 7px 10px;
+  padding: 7px 7px;
   font-size: 1em;
   font-weight: 700;
   background-color: #1a1a1a;
@@ -370,7 +370,7 @@ body {
   border: 2px solid #00ff00;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
-  margin: 5%;
+  margin: 3%;
 }
 
 .action-button:hover {
