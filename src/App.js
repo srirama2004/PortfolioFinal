@@ -10,8 +10,8 @@ import Project from './components/projects'; // Assuming you have a Contact comp
 import ExEdu from './components/exedu'; // Assuming you have a Contact component
 import Expe from './components/expe'; // Assuming you have a Contact component
 import CertificateFlipBook from './components/CertificateFlipBook';
+import DragGame from './components/MagicOrbMenu';
 import './App.css';
-
 
 const App = () => {
   return (
@@ -25,7 +25,8 @@ const App = () => {
         <Route path="/projects" element={<Project />} />
         <Route path="/exedu" element={<ExEdu />} />
         <Route path="/expe" element={<Expe />} />
-         <Route path="/certi"element={<CertificateFlipBook/>}/>
+        <Route path="/certi"element={<CertificateFlipBook/>}/>
+        <Route path="/dr"element={<DragGame/>}/>
         </Routes>
         </Router>
 
