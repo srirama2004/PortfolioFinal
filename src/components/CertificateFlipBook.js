@@ -3,20 +3,38 @@ import './CertificateFlipBook.css';
 
 const certificates = [
   {
-    title: 'React Developer Certificate',
-    description: 'Certified in advanced React.js concepts and performance optimization.',
-    image: '/certificates/react-cert.jpg'
+  title: 'IBM Machine Learning Professional Certificate',
+  description: `Completed all 6 courses in IBM's ML specialization on Coursera, covering EDA, Regression, Classification, Unsupervised ML, Deep Learning, Reinforcement Learning, and a Capstone project.`,
+  image: '/certi/Ml.png',
+  link: 'https://www.coursera.org/account/accomplishments/specialization/T1ZOUH6M8F9X'
   },
   {
-    title: 'Python for Data Science',
-    description: 'Completed Python for data analysis and visualization.',
-    image: '/certificates/python-cert.jpg'
+  title: 'Introduction to Big Data',
+  description: `Certified by University of California San Diego. Covered topics like Hadoop, Data Storage, Distributed Computing, and Big Data Analytics.`,
+  image: '/certi/IntroBd.png', 
+  link: 'https://www.coursera.org/account/accomplishments/verify/NPVCP40N36LT'
   },
   {
-    title: 'UI/UX Design Mastery',
-    description: 'Certified from Figma Bootcamp covering UI systems and usability.',
-    image: '/certificates/uiux-cert.jpg'
+  title: 'Big Data Integration and Processing',
+  description: `Certified by University of California San Diego. Covered Apache Hadoop, Spark, SQL/NoSQL, Data Pipelines, and Integration strategies.`,
+  image: '/certi/BDIntegration.png', 
+  link: 'https://www.coursera.org/account/accomplishments/verify/L3O8UYFEPABJ'
+
+  },
+    {
+  title: 'Big Data Modeling and Management Systems',
+  description: `Certified by University of California San Diego. Covered NoSQL, Hadoop, Database Design, Real-Time Data, and Data Modeling techniques.`,
+  image: '/certi/BDModeling.png',
+  link: 'https://www.coursera.org/account/accomplishments/certificate/YOUR_CERTIFICATE_ID'
+
+  },
+   {
+  title: 'Introduction to TensorFlow for AI/ML/DL',
+  description: `Certified by DeepLearning.AI. Built neural networks using TensorFlow and Keras for computer vision and deep learning applications.`,
+  image: '/certi/Ten.png',
+  link: 'https://www.coursera.org/account/accomplishments/verify/NPVCP40N36LT'
   }
+
 ];
 
 const CertificateFlipBook = () => {
@@ -43,6 +61,11 @@ const CertificateFlipBook = () => {
               <div className="flip-back">
                 <h3>{cert.title}</h3>
                 <p>{cert.description}</p>
+                 {cert.link && (
+    <a href={cert.link} target="_blank" rel="noopener noreferrer" className="cert-link">
+      View Certificate
+    </a>
+  )}
               </div>
             </div>
           </div>

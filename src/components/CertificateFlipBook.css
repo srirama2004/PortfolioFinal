@@ -22,8 +22,8 @@
 }
 
 .flip-card {
-  width: 280px;
-  height: 350px;
+  width: 460px;
+  height: 360px;
   perspective: 1000px;
 }
 
@@ -85,6 +85,17 @@
   font-size: 1em;
   color: #ccc;
   line-height: 1.4;
+}
+.cert-link {
+  margin-top: 10px;
+  display: inline-block;
+  color: #4fc3f7;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+.cert-link:hover {
+  color: #81d4fa;
 }
 
 @media (max-width: 600px) {
