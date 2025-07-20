@@ -79,7 +79,7 @@ const CertificateFlipBook = () => {
               </div>
               <div className="flip-back">
                 <h3>{cert.title}</h3>
-                <p style={'text-align:justify'}>{cert.description}</p>
+                <p style={{ textAlign: 'justify' }}>{cert.description}</p>
                  {cert.link && (
     <a href={cert.link} target="_blank" rel="noopener noreferrer" className="cert-link">
       View Certificate
