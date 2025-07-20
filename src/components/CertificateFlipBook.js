@@ -46,7 +46,13 @@ const certificates = [
   - Dynamic Programming, Tries, Advanced String Algorithms, Maths`,
   image: '/certi/dsatuf+.png',
   link: 'https://takeuforward.org/plus/profile/Srirama%20V' 
-  }
+  },
+  {
+  title: 'Google AI Essentials',
+  description: `Obtained from Google via Coursera for successful completion of the Google AI Essentials course. Covered topics such as generative AI, prompt engineering, responsible AI use, innovation, and data ethics.`,
+  image: '/certi/gai.png',  // Update path if needed
+  link: 'https://www.coursera.org/account/accomplishments/verify/EALM6QZ30NAV' // Replace with actual link if available
+}
 
 ];
 
@@ -73,7 +79,7 @@ const CertificateFlipBook = () => {
               </div>
               <div className="flip-back">
                 <h3>{cert.title}</h3>
-                <p>{cert.description}</p>
+                <p style={'text-align:justify'}>{cert.description}</p>
                  {cert.link && (
     <a href={cert.link} target="_blank" rel="noopener noreferrer" className="cert-link">
       View Certificate
