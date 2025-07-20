@@ -58,9 +58,9 @@ const categories = [
 
 const skills = {
   cs: ['DSA', 'OOP','DBMS','Operating System','Machine Learning','Computer Networks', 'Embedded Systems'],
-  lang: ['Java', 'Python', 'C++', 'JavaScript','SQL'],
-  web: ['HTML', 'CSS','MongoDB','PostgreySql', 'React', 'Node.js'],
-  design: ['Figma', 'Canva'],
+  lang: ['Java', 'Python', 'C++','C','JavaScript','SQL'],
+  web: ['HTML', 'CSS','MongoDB','PostgreySql', 'React', 'Node.js','Express'],
+  Others: ['Github','Figma','Canva','Jamovi'],
 };
 
 const getAllSkills = () => Object.values(skills).flat();
