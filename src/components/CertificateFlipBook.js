@@ -33,7 +33,20 @@ const certificates = [
   description: `Certified by DeepLearning.AI. Built neural networks using TensorFlow and Keras for computer vision and deep learning applications.`,
   image: '/certi/Ten.png',
   link: 'https://www.coursera.org/account/accomplishments/verify/NPVCP40N36LT'
-  }
+  },
+  {
+  title: 'Data Structures and Algorithms',
+  description: `Obtained from TUF+ for successful completion of the Data Structures and Algorithms course.
+  Covered:
+  - Sorting, Arrays, Hashing, Binary Search, Recursion
+  - Linked List, Bit Manipulation, Greedy Algorithms
+  - Sliding Window / 2 Pointer, Stack / Queues
+  - Binary Trees, BSTs, Heaps, Graphs
+  - Graph Traversals, Cycles, Shortest Path Algorithms:
+  - Dynamic Programming, Tries, Advanced String Algorithms, Maths`,
+  image: '/certi/dsatuf+.png',
+  link: 'https://takeuforward.org/plus/profile/Srirama%20V' 
+
 
 ];
 
