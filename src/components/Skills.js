@@ -46,7 +46,7 @@ const categories = [
     ),
   },
   {
-    key: 'design',
+    key: 'others',
     label: 'Design Tools',
     icon: (
       <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
@@ -60,7 +60,7 @@ const skills = {
   cs: ['DSA', 'OOP','DBMS','Operating System','Machine Learning','Computer Networks', 'Embedded Systems'],
   lang: ['Java', 'Python', 'C++','C','JavaScript','SQL'],
   web: ['HTML', 'CSS','MongoDB','PostgreySql', 'React', 'Node.js','Express'],
-  Others: ['Github','Figma','Canva','Jamovi'],
+  others: ['Github','Figma','Canva','Jamovi'],
 };
 
 const getAllSkills = () => Object.values(skills).flat();
