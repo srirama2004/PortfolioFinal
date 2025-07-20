@@ -46,7 +46,7 @@ const certificates = [
   - Dynamic Programming, Tries, Advanced String Algorithms, Maths`,
   image: '/certi/dsatuf+.png',
   link: 'https://takeuforward.org/plus/profile/Srirama%20V' 
-
+  }
 
 ];
 
