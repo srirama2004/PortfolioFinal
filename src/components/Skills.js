@@ -59,7 +59,7 @@ const categories = [
 const skills = {
   cs: ['DSA', 'OOP','DBMS','Operating System','Machine Learning','Computer Networks', 'Embedded Systems'],
   lang: ['Java', 'Python', 'C++','C','JavaScript','SQL'],
-  web: ['HTML', 'CSS','MongoDB','PostgreySql', 'React', 'Node.js','Express'],
+  web: ['HTML', 'CSS','MongoDB','PostgreySql', 'React', 'Node.js','Express','Flask'],
   others: ['Github','Figma','Canva','Jamovi'],
 };
 
