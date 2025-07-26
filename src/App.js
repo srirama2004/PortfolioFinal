@@ -12,7 +12,7 @@ import Expe from './components/expe'; // Assuming you have a Contact component
 import CertificateFlipBook from './components/CertificateFlipBook';
 import DragGame from './components/MagicOrbMenu';
 import './App.css';
-
+import { Analytics } from '@vercel/analytics/react';
 const App = () => {
   return (
     <div className="App">
@@ -29,7 +29,7 @@ const App = () => {
         <Route path="/dr"element={<DragGame/>}/>
         </Routes>
         </Router>
-
+        <Analytics />
     </div>
   );
 };
