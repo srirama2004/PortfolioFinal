@@ -102,3 +102,46 @@ input[name="message"],
 input[name="suggestion"] {
   min-height: 100px;
 }
+@media screen and (max-width: 550px) {
+  .contact-container {
+    margin: 40px 20px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(1, 250, 34, 0.4);
+  }
+
+  .contact-title {
+    font-size: 1.8rem;
+  }
+
+  .contact-description {
+    font-size: 1rem;
+    margin-bottom: 25px;
+  }
+
+  .styled-input {
+    font-size: 1rem;
+    padding: 16px 14px;
+  }
+
+  .floating-label {
+    font-size: 0.9rem;
+  }
+
+  .styled-input:focus + .floating-label,
+  .styled-input:not(:placeholder-shown) + .floating-label,
+  .styled-input:not(:empty) + .floating-label {
+    font-size: 0.7rem;
+    top: -8px;
+  }
+
+  .contact-button {
+    padding: 14px 20px;
+    font-size: 1rem;
+  }
+
+  input[name="message"],
+  input[name="suggestion"] {
+    min-height: 80px;
+  }
+}
