@@ -1,111 +1,104 @@
-/* Contact Container */
 .contact-container {
-  text-align: center;
-  padding: 60px 20px;
-  background-color: linear-gradient(black,rgb(40, 40, 40));
-  color: #fff;
-  font-family: 'Roboto', sans-serif;
-  border-radius: 15px;
-  max-width: 800px;
-  margin: 0 auto;
-  margin-right: 65%;
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 40px;
+  background: rgba(20, 20, 20, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(1, 250, 34, 0.282);
+  backdrop-filter: blur(10px);
 }
-
-/* Title Style */
+.contact-container:hover{
+    box-shadow: 0 0 20px rgba(1, 250, 34, 0.607);
+}
 .contact-title {
-  font-size: 3rem;
-  font-weight: 700;
-  color: #ffffff;
-  margin-bottom: 20px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-/* Contact Description */
-.contact-description {
-  font-size: 1.2rem;
-  font-weight: 400;
-  color: #e0e0e0;
-  margin-bottom: 40px;
-  font-style: italic;
-}
-
-/* Social Icon Styling */
-.social-icon {
-  width: 60px;
-  height: 60px;
-  object-fit: contain;
-  border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-bottom: 30px;
-}
-
-.social-icon:hover {
-  transform: scale(1.1);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-
-/* Contact Email Section */
-.contact-email-container {
-  margin-top: 40px;
-}
-
-.contact-email-description {
-  font-size: 1.1rem;
-  color: #e0e0e0;
+  font-size: 2.5rem;
+  font-style: oblique;
+  text-align: center;
+  color: #35f100;
   margin-bottom: 10px;
 }
 
-.contact-email-link {
-  font-size: 1.3rem;
-  font-weight: 500;
+.contact-description {
+  text-align: center;
+  color: #ccc;
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Floating Label Input Style */
+.form-group {
+  position: relative;
+}
+
+.styled-input {
+  width: 100%;
+  padding: 20px 16px 20px 16px;
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+  border: 2px solid #333;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.styled-input:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 12px #4caf50;
+  outline: none;
+}
+
+.floating-label {
+  position: absolute;
+  left: 18px;
+  top: 22px;
+  color: #999;
+  font-size: 1rem;
+  pointer-events: none;
+  transition: 0.3s ease all;
+}
+
+.styled-input:focus + .floating-label,
+.styled-input:not(:placeholder-shown) + .floating-label,
+.styled-input:not(:empty) + .floating-label {
+  top: -10px;
+  left: 14px;
+  background-color: #1e1e1e;
+  padding: 0 6px;
+  font-size: 0.8rem;
   color: #4caf50;
-  text-decoration: none;
-  border-bottom: 2px solid #4caf50;
-  transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.contact-email-link:hover {
-  color: #ffffff;
-  transform: translateY(-2px);
-  border-bottom: 2px solid #ffffff;
+/* Button with glowing star */
+.contact-button {
+  padding: 16px 24px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #000000;
+  background-color: #13c118;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all 0.3s ease;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .contact-container {
-    padding: 40px 20px;
-  }
-
-  .contact-title {
-    font-size: 2.5rem;
-  }
-
-  .contact-description {
-    font-size: 1rem;
-  }
-
-  .contact-email-link {
-    font-size: 1.2rem;
-  }
+.contact-button:hover {
+  background-color: #5bff03;
+  transform: scale(1.05);
 }
 
-@media (max-width: 480px) {
-  .contact-container {
-    padding: 30px 15px;
-    margin-left: 60%;
-  }
-
-  .contact-title {
-    font-size: 2rem;
-  }
-
-  .contact-description {
-    font-size: 1rem;
-  }
-
-  .contact-email-link {
-    font-size: 1rem;
-  }
+/* Optional: Style textarea larger */
+input[name="message"],
+input[name="suggestion"] {
+  min-height: 100px;
 }

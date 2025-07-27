@@ -1,21 +1,49 @@
-import React from 'react';
-import linkedInImage from './pic/linkedin.jpg'; // Adjust the path as needed
-import './Contact.css'; // Ensure this file exists in the same directory
-
+import React, { useState } from 'react';
+import './Contact.css';
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: '',
+    suggestion: ''
+  });
+
+  const handleChange = (e) => {
+    setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert('Thanks for your message! 💌');
+    setFormData({ name: '', email: '', message: '', suggestion: '' });
+  };
+
   return (
-    <div className="contact-container">
-      <h1 className="contact-title">Let's Connect!</h1>
-      <p className="contact-description">I'm always open to collaboration, feedback, or a simple hello 😊.</p>
-      
-      <a href="https://www.linkedin.com/in/srirama-v-b5bb32293/" target="_blank" rel="noopener noreferrer">
-        <img src={linkedInImage} alt="LinkedIn" className="social-icon" />
-      </a>
-      
-      <div className="contact-email-container">
-        <p className="contact-email-description">Or mail to:</p>
-        <a href="mailto:sriramavate2@gmail.com" className="contact-email-link">sriramavate2@gmail.com</a>
-      </div>
+    <div className="contact-container glass-card">
+      <h1 className="contact-title">Contact Me</h1>
+      <p className="contact-description">Share your thoughts, suggestions, or just say hi 👋</p>
+
+      <form onSubmit={handleSubmit} className="contact-form">
+        {['name', 'email', 'message', 'suggestion'].map((field) => (
+          <div key={field} className="form-group">
+            <input
+              type={field === 'email' ? 'email' : field === 'name' ? 'text' : 'text'}
+              name={field}
+              id={field}
+              className="styled-input"
+              required={field !== 'suggestion'}
+              value={formData[field]}
+              onChange={handleChange}
+            />
+            <label htmlFor={field} className="floating-label">
+              {field.charAt(0).toUpperCase() + field.slice(1)}
+            </label>
+          </div>
+        ))}
+        <button type="submit" className="contact-button">
+          Send Message
+        </button>
+      </form>
     </div>
   );
 };
