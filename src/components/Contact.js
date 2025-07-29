@@ -14,19 +14,27 @@ const Contact = () => {
     setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+const handleSubmit = (e) => {
+  e.preventDefault();
 
-    emailjs.send('service_n76h4lx', 'template_o92b3mz', formData, '1tViiiCAuxPPFSRof')
-      .then(() => {
-        alert('📩 Message sent! Thanks for your feedback 💬');
-        setFormData({ name: '', email: '', message: '', suggestion: '' });
-      })
-      .catch((error) => {
-        console.error('FAILED...', error);
-        alert('❌ Failed to send message. Please try again later.');
-      });
-  };
+  const emailRegex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+
+  if (!emailRegex.test(formData.email)) {
+    alert('❌ Please enter a valid Gmail address like: yourname@gmail.com');
+    return;
+  }
+
+  emailjs.send('service_n76h4lx', 'template_o92b3mz', formData, '1tViiiCAuxPPFSRof')
+    .then(() => {
+      alert('📩 Message sent! Thanks for your feedback 💬');
+      setFormData({ name: '', email: '', message: '', suggestion: '' });
+    })
+    .catch((error) => {
+      console.error('FAILED...', error);
+      alert('❌ Failed to send message. Please try again later.');
+    });
+};
+
 
   return (
     <div className="contact-container glass-card">
