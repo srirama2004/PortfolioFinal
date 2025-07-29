@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
 import './Contact.css';
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -14,8 +16,16 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert('Thanks for your message! 💌');
-    setFormData({ name: '', email: '', message: '', suggestion: '' });
+
+    emailjs.send('service_n76h4lx', 'template_o92b3mz', formData, '1tViiiCAuxPPFSRof')
+      .then(() => {
+        alert('📩 Message sent! Thanks for your feedback 💬');
+        setFormData({ name: '', email: '', message: '', suggestion: '' });
+      })
+      .catch((error) => {
+        console.error('FAILED...', error);
+        alert('❌ Failed to send message. Please try again later.');
+      });
   };
 
   return (
@@ -27,22 +37,21 @@ const Contact = () => {
         {['name', 'email', 'message', 'suggestion'].map((field) => (
           <div key={field} className="form-group">
             <input
-              type={field === 'email' ? 'email' : field === 'name' ? 'text' : 'text'}
+              type={field === 'email' ? 'email' : 'text'}
               name={field}
               id={field}
               className="styled-input"
               required={field !== 'suggestion'}
               value={formData[field]}
               onChange={handleChange}
+              placeholder=" "
             />
             <label htmlFor={field} className="floating-label">
               {field.charAt(0).toUpperCase() + field.slice(1)}
             </label>
           </div>
         ))}
-        <button type="submit" className="contact-button">
-          Send Message
-        </button>
+        <button type="submit" className="contact-button">Send Message</button>
       </form>
     </div>
   );
